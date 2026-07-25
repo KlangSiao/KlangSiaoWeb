@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manga Reader</title>
+  <link rel="icon" type="image/png" href="icon\LOGO.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="reader-body">
+
+  <div id="loading-screen" class="loading-overlay">
+    <div class="spinner"></div>
+    <p>กำลังเตรียมมังงะ...</p>
+  </div>
+
+  <div class="audio-controls">
+    <button id="mute-btn" class="control-btn">🔊 เปิดเสียงอยู่</button>
+    <a href="index.html" class="control-btn back-btn">⬅️ หน้าแรก</a>
+  </div>
+
+  <!-- 📖 ส่วนแสดงมังงะแบบเปิดทีละหน้า -->
+  <main class="manga-container">
+    <div class="manga-page-wrapper" id="page-click-area">
+      <img id="current-manga-img" src="" alt="Manga Page">
+    </div>
+
+    <!-- ปุ่มควบคุมการเปลี่ยนหน้า -->
+    <div class="page-controls">
+      <button id="prev-btn" class="nav-btn">◀ หน้าก่อนหน้า</button>
+      <span id="page-indicator">หน้า 1 / 1</span>
+      <button id="next-btn" class="nav-btn">หน้าถัดไป ▶</button>
+    </div>
+  </main>
+
+  <script src="reader.js"></script>
+</body>
+</html>
