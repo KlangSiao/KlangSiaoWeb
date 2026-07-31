@@ -290,3 +290,13 @@ header p {
   font-weight: bold;
   color: #555;
 }
+#current-manga-img {
+  -webkit-touch-callout: none; /* ปิดเมนูป๊อปอัพตอนกดค้างในมือถือ */
+  -webkit-user-select: none;   /* ปิดการเลือกรูปภาพ */
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+  -webkit-user-drag: none;     /* 🔥 ใช้แค่ตัวนี้ตัวเดียวพอครับ */
+}

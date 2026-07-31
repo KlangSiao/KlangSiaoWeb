@@ -357,3 +357,14 @@ window.addEventListener('load', () => {
   }
   renderPage(currentPageIndex); // แสดงหน้าแรกทันที
 });
+// ป้องกันการกดคลิกขวา (บนคอม) หรือกดค้างเพื่อบันทึกรูป (บนมือถือ)
+imgElement.addEventListener('contextmenu', (e) => {
+  e.preventDefault(); // ยกเลิกการแสดงเมนูเซฟรูป
+  return false;
+});
+
+// ป้องกันการลากรูปภาพออกไปเซฟ
+imgElement.addEventListener('dragstart', (e) => {
+  e.preventDefault();
+  return false;
+});
