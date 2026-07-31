@@ -287,8 +287,9 @@ header p {
 }
 
 #page-indicator {
-  font-weight: bold;
-  color: #555;
+  font-size: 14px;         /* 1. ลดขนาดตัวอักษรลง (ถ้าเดิมเป็น 16px หรือใหญ่กว่า) */
+  white-space: nowrap;     /* 2. 🔥 สั่งห้ามขึ้นบรรทัดใหม่เด็ดขาด */
+  letter-spacing: 0.5px;   /* ปรับระยะห่างตัวอักษรให้กระชับขึ้น */
 }
 #current-manga-img {
   -webkit-touch-callout: none; /* ปิดเมนูป๊อปอัพตอนกดค้างในมือถือ */
