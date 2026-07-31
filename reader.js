@@ -93,6 +93,58 @@ const mangaData = {
       { img: "asset/Knightsoul Vacation/22.png", sfx: "" },
       { img: "asset/Knightsoul Vacation/23.png", sfx: "" }
     ]
+  },
+  Arcade_Affair: {
+    // 🎵 แยก BGM ตามช่วงหน้า
+    bgmTracks: [
+      { start: 1, end: 44, src: "asset/Arcade Affair/BGM-Ar3.mp3" },
+    ],
+    scenes: [
+      { img: "asset/Arcade Affair/1.png", sfx: "" },
+      { img: "asset/Arcade Affair/2.png", sfx: "" },
+      { img: "asset/Arcade Affair/3.png", sfx: "" },
+      { img: "asset/Arcade Affair/4.png", sfx: "" },
+      { img: "asset/Arcade Affair/5.png", sfx: "" },
+      { img: "asset/Arcade Affair/6.png", sfx: "" },
+      { img: "asset/Arcade Affair/7.png", sfx: "" },
+      { img: "asset/Arcade Affair/8.png", sfx: "" },
+      { img: "asset/Arcade Affair/9.png", sfx: "" },
+      { img: "asset/Arcade Affair/10.png", sfx: "" },
+      { img: "asset/Arcade Affair/11.png", sfx: "" },
+      { img: "asset/Arcade Affair/12.png", sfx: "" },
+      { img: "asset/Arcade Affair/13.png", sfx: "" },
+      { img: "asset/Arcade Affair/14.png", sfx: "" },
+      { img: "asset/Arcade Affair/15.png", sfx: "" },
+      { img: "asset/Arcade Affair/16.png", sfx: "" },
+      { img: "asset/Arcade Affair/17.png", sfx: "" },
+      { img: "asset/Arcade Affair/18.png", sfx: "" },
+      { img: "asset/Arcade Affair/19.png", sfx: "" },
+      { img: "asset/Arcade Affair/20.png", sfx: "" },
+      { img: "asset/Arcade Affair/21.png", sfx: "" },
+      { img: "asset/Arcade Affair/22.png", sfx: "" },
+      { img: "asset/Arcade Affair/23.png", sfx: "" },
+      { img: "asset/Arcade Affair/24.png", sfx: "" },
+      { img: "asset/Arcade Affair/25.png", sfx: "" },
+      { img: "asset/Arcade Affair/26.png", sfx: "" },
+      { img: "asset/Arcade Affair/27.png", sfx: "" },
+      { img: "asset/Arcade Affair/28.png", sfx: "" },
+      { img: "asset/Arcade Affair/29.png", sfx: "" },
+      { img: "asset/Arcade Affair/30.png", sfx: "" },
+      { img: "asset/Arcade Affair/31.png", sfx: "" },
+      { img: "asset/Arcade Affair/32.png", sfx: "" },
+      { img: "asset/Arcade Affair/33.png", sfx: "" },
+      { img: "asset/Arcade Affair/34.png", sfx: "" },
+      { img: "asset/Arcade Affair/35.png", sfx: "" },
+      { img: "asset/Arcade Affair/36.png", sfx: "" },
+      { img: "asset/Arcade Affair/37.png", sfx: "" },
+      { img: "asset/Arcade Affair/38.png", sfx: "" },
+      { img: "asset/Arcade Affair/39.png", sfx: "" },
+      { img: "asset/Arcade Affair/40.png", sfx: "" },
+      { img: "asset/Arcade Affair/41.png", sfx: "" },
+      { img: "asset/Arcade Affair/42.png", sfx: "" },
+      { img: "asset/Arcade Affair/43.png", sfx: "" },
+      { img: "asset/Arcade Affair/44.png", sfx: "" },
+    ]
   }
 };
 
