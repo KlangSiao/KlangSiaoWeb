@@ -170,10 +170,11 @@ const loadingScreen = document.getElementById('loading-screen');
 const pageClickArea = document.getElementById('page-click-area');
 
 // ฟังก์ชันอัปเดตหน้ามังงะและระบบเสียง
+// ฟังก์ชันอัปเดตหน้ามังงะและระบบเสียง
 function renderPage(index) {
   if (!currentStory || !currentStory.scenes[index]) return;
 
-  // หยุดเสียง SFX เดิมทันทีที่เปลี่ยนหน้า (ป้องกันเสียงวนลูปค้างไปหน้าอื่น)
+  // หยุดเสียง SFX เดิมทันทีที่เปลี่ยนหน้า
   if (currentSFXAudio) {
     currentSFXAudio.pause();
     currentSFXAudio = null;
@@ -196,6 +197,39 @@ function renderPage(index) {
   // เล่น SFX ประจำหน้า (ถ้ามี)
   if (scene.sfx) {
     playSFX(scene.sfx);
+  }
+
+  // 🔥 สั่งโหลดหน้าถัดไป (และหน้าก่อนหน้า) ล่วงหน้าทันที เพื่อความลื่นไหล
+  preloadNextPage(index);
+}
+
+// 🚀 ฟังก์ชันสำหรับ Preload รูปภาพและเสียงของหน้าถัดไปไว้ใน Cache
+function preloadNextPage(currentIndex) {
+  const nextIndex = currentIndex + 1;
+  
+  // ถ้ามีหน้าถัดไป ให้เริ่มแอบโหลด
+  if (currentStory && currentStory.scenes[nextIndex]) {
+    const nextScene = currentStory.scenes[nextIndex];
+
+    // 1. Preload รูปภาพหน้าถัดไป
+    if (nextScene.img) {
+      const imgPreload = new Image();
+      imgPreload.src = nextScene.img;
+    }
+
+    // 2. Preload เสียง SFX หน้าถัดไป (ถ้ามี)
+    let sfxSrc = "";
+    if (typeof nextScene.sfx === 'string') {
+      sfxSrc = nextScene.sfx;
+    } else if (typeof nextScene.sfx === 'object' && nextScene.sfx.src) {
+      sfxSrc = nextScene.sfx.src;
+    }
+
+    if (sfxSrc) {
+      const audioPreload = new Audio();
+      audioPreload.src = sfxSrc;
+      audioPreload.load(); // สั่งเบราว์เซอร์ให้โหลดไฟล์เสียงมารอไว้
+    }
   }
 }
 
