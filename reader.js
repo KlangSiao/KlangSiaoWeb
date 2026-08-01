@@ -1,149 +1,219 @@
 const mangaData = {
-  Knightsoul_Vacation: {
+Knightsoul_Vacation: {
     // 🎵 แยก BGM ตามช่วงหน้า
     bgmTracks: [
       { start: 1, end: 7, src: "asset/Knightsoul Vacation/NewBGM.mp3" },
       { start: 8, end: 23, src: "asset/Knightsoul Vacation/Romence.mp3" }
     ],
     scenes: [
-      { img: "asset/Knightsoul Vacation/1.png", sfx: "" },
-      { img: "asset/Knightsoul Vacation/2.png", sfx: "" },
-      { img: "asset/Knightsoul Vacation/3.png", sfx: "" },
-      { img: "asset/Knightsoul Vacation/4.png", sfx: "asset/Knightsoul Vacation/Wave.mp3" },
-      { img: "asset/Knightsoul Vacation/5.png", sfx: "asset/Knightsoul Vacation/SoundP5.mp3" },
-      { img: "asset/Knightsoul Vacation/6.png", sfx: "" },
-      { img: "asset/Knightsoul Vacation/7.png", sfx: "" },
-      { img: "asset/Knightsoul Vacation/8.png", sfx: { 
-      src: "asset/Knightsoul Vacation/Page8.mp3", 
-      volume: 0.1
-      } 
-  },
-      { img: "asset/Knightsoul Vacation/9.png", sfx: {
-      src:  "asset/Knightsoul Vacation/Page9.mp3",
-      volume: 0.8,
-    }
-  },
-      { img: "asset/Knightsoul Vacation/10.png", sfx: {
-      src: "asset/Knightsoul Vacation/Page10.mp3" ,
-      volume: 0.8,
-      loop: true
-      }
-  },
-      { img: "asset/Knightsoul Vacation/11.png", sfx: {
-      src:  "asset/Knightsoul Vacation/Page11.mp3",
-      volume: 0.8,
-    } 
-  },
-      { img: "asset/Knightsoul Vacation/12.png", sfx: {
-      src:  "asset/Knightsoul Vacation/Page12.mp3",
-      volume: 0.8,
-    } 
-  },
-      { img: "asset/Knightsoul Vacation/13.png", sfx: {
-      src:  "asset/Knightsoul Vacation/Page13.mp3",
-      volume: 0.8,
-    } 
-  },
-      { img: "asset/Knightsoul Vacation/14.png", sfx: {
-      src:  "asset/Knightsoul Vacation/Page14.mp3",
-      volume: 0.8,
-      loop: true
-    } 
-  },
-      { img: "asset/Knightsoul Vacation/15.png", sfx: {
-      src:  "asset/Knightsoul Vacation/Page14.mp3",
-      volume: 0.8,
-      loop: true
-    } 
-  },
-      { img: "asset/Knightsoul Vacation/16.png", sfx: {
-      src:  "asset/Knightsoul Vacation/Page16.mp3",
-      volume: 0.8,
-      loop: true
-    } 
-  },
-      { img: "asset/Knightsoul Vacation/17.png", sfx: {
-      src:  "asset/Knightsoul Vacation/Page17.mp3",
-      volume: 0.8,
-    } 
-  },
-      { img: "asset/Knightsoul Vacation/18.png", sfx: {
-      src:  "asset/Knightsoul Vacation/Page18.mp3",
-      volume: 0.8,
-      loop: true
-    } 
-  },
-      { img: "asset/Knightsoul Vacation/19.png", sfx: {
-      src:  "asset/Knightsoul Vacation/Page19.mp3",
-      volume: 0.8,
-      loop: true
-    } 
-  },
-      { img: "asset/Knightsoul Vacation/20.png", sfx: {
-      src:  "asset/Knightsoul Vacation/Page20.mp3",
-      volume: 0.8,
-      loop: true
-    } 
-  },
-      { img: "asset/Knightsoul Vacation/21.png", sfx: {
-      src:  "asset/Knightsoul Vacation/Page21.mp3",
-      volume: 0.8
-    } 
-  },
-      { img: "asset/Knightsoul Vacation/22.png", sfx: "" },
-      { img: "asset/Knightsoul Vacation/23.png", sfx: "" }
+      { img: "asset/Knightsoul Vacation/1.webp", sfx: "" },
+      { img: "asset/Knightsoul Vacation/2.webp", sfx: "" },
+      { img: "asset/Knightsoul Vacation/3.webp", sfx: "" },
+      { img: "asset/Knightsoul Vacation/4.webp", sfx: "asset/Knightsoul Vacation/Wave.mp3" },
+      { img: "asset/Knightsoul Vacation/5.webp", sfx: "asset/Knightsoul Vacation/SoundP5.mp3" },
+      { img: "asset/Knightsoul Vacation/6.webp", sfx: "" },
+      { img: "asset/Knightsoul Vacation/7.webp", sfx: "" },
+      { 
+        img: "asset/Knightsoul Vacation/8.webp", 
+        sfx: { 
+          src: "asset/Knightsoul Vacation/Page8.mp3", 
+          volume: 0.1 
+        } 
+      },
+      { 
+        img: "asset/Knightsoul Vacation/9.webp", 
+        sfx: {
+          src: "asset/Knightsoul Vacation/Page9.mp3",
+          volume: 0.8
+        }
+      },
+      { 
+        img: "asset/Knightsoul Vacation/10.webp", 
+        sfx: {
+          src: "asset/Knightsoul Vacation/Page10.mp3",
+          volume: 0.8,
+          loop: true
+        }
+      },
+      { 
+        img: "asset/Knightsoul Vacation/11.webp", 
+        sfx: {
+          src: "asset/Knightsoul Vacation/Page11.mp3",
+          volume: 0.8
+        } 
+      },
+      { 
+        img: "asset/Knightsoul Vacation/12.webp", 
+        sfx: {
+          src: "asset/Knightsoul Vacation/Page12.mp3",
+          volume: 0.8
+        } 
+      },
+      { 
+        img: "asset/Knightsoul Vacation/13.webp", 
+        sfx: {
+          src: "asset/Knightsoul Vacation/Page13.mp3",
+          volume: 0.8
+        } 
+      },
+      { 
+        img: "asset/Knightsoul Vacation/14.webp", 
+        sfx: {
+          src: "asset/Knightsoul Vacation/Page14.mp3",
+          volume: 0.8,
+          loop: true
+        } 
+      },
+      { 
+        img: "asset/Knightsoul Vacation/15.webp", 
+        sfx: {
+          src: "asset/Knightsoul Vacation/Page14.mp3",
+          volume: 0.8,
+          loop: true
+        } 
+      },
+      { 
+        img: "asset/Knightsoul Vacation/16.webp", 
+        sfx: {
+          src: "asset/Knightsoul Vacation/Page16.mp3",
+          volume: 0.8,
+          loop: true
+        } 
+      },
+      { 
+        img: "asset/Knightsoul Vacation/17.webp", 
+        sfx: {
+          src: "asset/Knightsoul Vacation/Page17.mp3",
+          volume: 0.8
+        } 
+      },
+      { 
+        img: "asset/Knightsoul Vacation/18.webp", 
+        sfx: {
+          src: "asset/Knightsoul Vacation/Page18.mp3",
+          volume: 0.8,
+          loop: true
+        } 
+      },
+      { 
+        img: "asset/Knightsoul Vacation/19.webp", 
+        sfx: {
+          src: "asset/Knightsoul Vacation/Page19.mp3",
+          volume: 0.8,
+          loop: true
+        } 
+      },
+      { 
+        img: "asset/Knightsoul Vacation/20.webp", 
+        sfx: {
+          src: "asset/Knightsoul Vacation/Page20.mp3",
+          volume: 0.8,
+          loop: true
+        } 
+      },
+      { 
+        img: "asset/Knightsoul Vacation/21.webp", 
+        sfx: {
+          src: "asset/Knightsoul Vacation/Page21.mp3",
+          volume: 0.8
+        } 
+      },
+      { img: "asset/Knightsoul Vacation/22.webp", sfx: "" },
+      { img: "asset/Knightsoul Vacation/23.webp", sfx: "" }
     ]
   },
-  Arcade_Affair: {
+Arcade_Affair: {
     // 🎵 แยก BGM ตามช่วงหน้า
     bgmTracks: [
       { start: 1, end: 44, src: "asset/Arcade Affair/BGM-Ar3.mp3" },
     ],
     scenes: [
-      { img: "asset/Arcade Affair/1.png", sfx: "" },
-      { img: "asset/Arcade Affair/2.png", sfx: "" },
-      { img: "asset/Arcade Affair/3.png", sfx: "" },
-      { img: "asset/Arcade Affair/4.png", sfx: "" },
-      { img: "asset/Arcade Affair/5.png", sfx: "" },
-      { img: "asset/Arcade Affair/6.png", sfx: "" },
-      { img: "asset/Arcade Affair/7.png", sfx: "" },
-      { img: "asset/Arcade Affair/8.png", sfx: "" },
-      { img: "asset/Arcade Affair/9.png", sfx: "" },
-      { img: "asset/Arcade Affair/10.png", sfx: "" },
-      { img: "asset/Arcade Affair/11.png", sfx: "" },
-      { img: "asset/Arcade Affair/12.png", sfx: "" },
-      { img: "asset/Arcade Affair/13.png", sfx: "" },
-      { img: "asset/Arcade Affair/14.png", sfx: "" },
-      { img: "asset/Arcade Affair/15.png", sfx: "" },
-      { img: "asset/Arcade Affair/16.png", sfx: "" },
-      { img: "asset/Arcade Affair/17.png", sfx: "" },
-      { img: "asset/Arcade Affair/18.png", sfx: "" },
-      { img: "asset/Arcade Affair/19.png", sfx: "" },
-      { img: "asset/Arcade Affair/20.png", sfx: "" },
-      { img: "asset/Arcade Affair/21.png", sfx: "" },
-      { img: "asset/Arcade Affair/22.png", sfx: "" },
-      { img: "asset/Arcade Affair/23.png", sfx: "" },
-      { img: "asset/Arcade Affair/24.png", sfx: "" },
-      { img: "asset/Arcade Affair/25.png", sfx: "" },
-      { img: "asset/Arcade Affair/26.png", sfx: "" },
-      { img: "asset/Arcade Affair/27.png", sfx: "" },
-      { img: "asset/Arcade Affair/28.png", sfx: "" },
-      { img: "asset/Arcade Affair/29.png", sfx: "" },
-      { img: "asset/Arcade Affair/30.png", sfx: "" },
-      { img: "asset/Arcade Affair/31.png", sfx: "" },
-      { img: "asset/Arcade Affair/32.png", sfx: "" },
-      { img: "asset/Arcade Affair/33.png", sfx: "" },
-      { img: "asset/Arcade Affair/34.png", sfx: "" },
-      { img: "asset/Arcade Affair/35.png", sfx: "" },
-      { img: "asset/Arcade Affair/36.png", sfx: "" },
-      { img: "asset/Arcade Affair/37.png", sfx: "" },
-      { img: "asset/Arcade Affair/38.png", sfx: "" },
-      { img: "asset/Arcade Affair/39.png", sfx: "" },
-      { img: "asset/Arcade Affair/40.png", sfx: "" },
-      { img: "asset/Arcade Affair/41.png", sfx: "" },
-      { img: "asset/Arcade Affair/42.png", sfx: "" },
-      { img: "asset/Arcade Affair/43.png", sfx: "" },
-      { img: "asset/Arcade Affair/44.png", sfx: "" },
+      { img: "asset/Arcade Affair/1.webp", sfx: "" },
+      { img: "asset/Arcade Affair/2.webp", sfx: "" },
+      { img: "asset/Arcade Affair/3.webp", sfx: "" },
+      { img: "asset/Arcade Affair/4.webp", sfx: "" },
+      { img: "asset/Arcade Affair/5.webp", sfx: "" },
+      { img: "asset/Arcade Affair/6.webp", sfx: "" },
+      { img: "asset/Arcade Affair/7.webp", sfx: "" },
+      { img: "asset/Arcade Affair/8.webp", sfx: "" },
+      { img: "asset/Arcade Affair/9.webp", sfx: "" },
+      { img: "asset/Arcade Affair/10.webp", sfx: "" },
+      { img: "asset/Arcade Affair/11.webp", sfx: "" },
+      { img: "asset/Arcade Affair/12.webp", sfx: "" },
+      { img: "asset/Arcade Affair/13.webp", sfx: "" },
+      { img: "asset/Arcade Affair/14.webp", sfx: "" },
+      { img: "asset/Arcade Affair/15.webp", sfx: "" },
+      { img: "asset/Arcade Affair/16.webp", sfx: "" },
+      { img: "asset/Arcade Affair/17.webp", sfx: "" },
+      { img: "asset/Arcade Affair/18.webp", sfx: "" },
+      { img: "asset/Arcade Affair/19.webp", sfx: "" },
+      { img: "asset/Arcade Affair/20.webp", sfx: "" },
+      { img: "asset/Arcade Affair/21.webp", sfx: "" },
+      { img: "asset/Arcade Affair/22.webp", sfx: "" },
+      { img: "asset/Arcade Affair/23.webp", sfx: "" },
+      { img: "asset/Arcade Affair/24.webp", sfx: "" },
+      { img: "asset/Arcade Affair/25.webp", sfx: "" },
+      { img: "asset/Arcade Affair/26.webp", sfx: "" },
+      { img: "asset/Arcade Affair/27.webp", sfx: "" },
+      { img: "asset/Arcade Affair/28.webp", sfx: "" },
+      { img: "asset/Arcade Affair/29.webp", sfx: "" },
+      { img: "asset/Arcade Affair/30.webp", sfx: "" },
+      { img: "asset/Arcade Affair/31.webp", sfx: "" },
+      { img: "asset/Arcade Affair/32.webp", sfx: "" },
+      { img: "asset/Arcade Affair/33.webp", sfx: "" },
+      { img: "asset/Arcade Affair/34.webp", sfx: "" },
+      { img: "asset/Arcade Affair/35.webp", sfx: "" },
+      { img: "asset/Arcade Affair/36.webp", sfx: "" },
+      { img: "asset/Arcade Affair/37.webp", sfx: "" },
+      { img: "asset/Arcade Affair/38.webp", sfx: "" },
+      { img: "asset/Arcade Affair/39.webp", sfx: "" },
+      { img: "asset/Arcade Affair/40.webp", sfx: "" },
+      { img: "asset/Arcade Affair/41.webp", sfx: "" },
+      { img: "asset/Arcade Affair/42.webp", sfx: "" },
+      { img: "asset/Arcade Affair/43.webp", sfx: "" },
+      { img: "asset/Arcade Affair/44.webp", sfx: "" },
+    ]
+  },
+Radical_Vacation: {
+    // 🎵 แยก BGM ตามช่วงหน้า
+    bgmTracks: [
+      { start: 1, end: 7, src: "asset/Radical Vacation/BGM-Ra3.mp3" },
+      { start: 8, end: 28, src: "asset/Radical Vacation/BGM-Ra2.mp3" },
+      { start: 29, end: 32, src: "asset/Radical Vacation/BGM-Ra1.mp3" }
+    ],
+    scenes: [
+      { img: "asset/Radical Vacation/1.webp", sfx: "" },
+      { img: "asset/Radical Vacation/2.webp", sfx: "" },
+      { img: "asset/Radical Vacation/3.webp", sfx: "" },
+      { img: "asset/Radical Vacation/4.webp", sfx: "" },
+      { img: "asset/Radical Vacation/5.webp", sfx: "" },
+      { img: "asset/Radical Vacation/6.webp", sfx: "" },
+      { img: "asset/Radical Vacation/7.webp", sfx: "" },
+      { img: "asset/Radical Vacation/8.webp", sfx: "" },
+      { img: "asset/Radical Vacation/9.webp", sfx: "" },
+      { img: "asset/Radical Vacation/10.webp", sfx: "" },
+      { img: "asset/Radical Vacation/11.webp", sfx: "" },
+      { img: "asset/Radical Vacation/12.webp", sfx: "" },
+      { img: "asset/Radical Vacation/13.webp", sfx: "" },
+      { img: "asset/Radical Vacation/14.webp", sfx: "" },
+      { img: "asset/Radical Vacation/15.webp", sfx: "" },
+      { img: "asset/Radical Vacation/16.webp", sfx: "" },
+      { img: "asset/Radical Vacation/17.webp", sfx: "" },
+      { img: "asset/Radical Vacation/18.webp", sfx: "" },
+      { img: "asset/Radical Vacation/19.webp", sfx: "" },
+      { img: "asset/Radical Vacation/20.webp", sfx: "" },
+      { img: "asset/Radical Vacation/21.webp", sfx: "" },
+      { img: "asset/Radical Vacation/22.webp", sfx: "" },
+      { img: "asset/Radical Vacation/23.webp", sfx: "" },
+      { img: "asset/Radical Vacation/24.webp", sfx: "" },
+      { img: "asset/Radical Vacation/25.webp", sfx: "" },
+      { img: "asset/Radical Vacation/26.webp", sfx: "" },
+      { img: "asset/Radical Vacation/27.webp", sfx: "" },
+      { img: "asset/Radical Vacation/28.webp", sfx: "" },
+      { img: "asset/Radical Vacation/29.webp", sfx: "" },
+      { img: "asset/Radical Vacation/30.webp", sfx: "" },
+      { img: "asset/Radical Vacation/31.webp", sfx: "" },
+      { img: "asset/Radical Vacation/32.webp", sfx: "" },
     ]
   }
 };
