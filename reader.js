@@ -9,15 +9,27 @@ Knightsoul_Vacation: {
       { img: "asset/Knightsoul Vacation/1.webp", sfx: "" },
       { img: "asset/Knightsoul Vacation/2.webp", sfx: "" },
       { img: "asset/Knightsoul Vacation/3.webp", sfx: "" },
-      { img: "asset/Knightsoul Vacation/4.webp", sfx: "asset/Knightsoul Vacation/Wave.mp3" },
-      { img: "asset/Knightsoul Vacation/5.webp", sfx: "asset/Knightsoul Vacation/SoundP5.mp3" },
+      { 
+        img: "asset/Knightsoul Vacation/4.webp", 
+        sfx: { 
+          src: "asset/Knightsoul Vacation/Wave.mp3", 
+          volume: 1
+        } 
+      },
+      { 
+        img: "asset/Knightsoul Vacation/5.webp", 
+        sfx: { 
+          src: "asset/Knightsoul Vacation/SoundP5.mp3", 
+          volume: 1 
+        } 
+      },
       { img: "asset/Knightsoul Vacation/6.webp", sfx: "" },
       { img: "asset/Knightsoul Vacation/7.webp", sfx: "" },
       { 
         img: "asset/Knightsoul Vacation/8.webp", 
         sfx: { 
           src: "asset/Knightsoul Vacation/Page8.mp3", 
-          volume: 0.1 
+          volume: 0.8 
         } 
       },
       { 
@@ -178,8 +190,8 @@ Radical_Vacation: {
     // 🎵 แยก BGM ตามช่วงหน้า
     bgmTracks: [
       { start: 1, end: 7, src: "asset/Radical Vacation/BGM-Ra3.mp3" },
-      { start: 8, end: 28, src: "asset/Radical Vacation/BGM-Ra2.mp3" },
-      { start: 29, end: 32, src: "asset/Radical Vacation/BGM-Ra1.mp3" }
+      { start: 0, end: 0, src: "asset/Radical Vacation/BGM-Ra2.mp3" },
+      { start: 8, end: 32, src: "asset/Radical Vacation/BGM-Ra1.mp3" }
     ],
     scenes: [
       { img: "asset/Radical Vacation/1.webp", sfx: "" },

@@ -301,3 +301,78 @@ header p {
   
   -webkit-user-drag: none;     /* 🔥 ใช้แค่ตัวนี้ตัวเดียวพอครับ */
 }
+/* ส่วนระบบค้นหาและ Filter Topics */
+.filter-section {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.search-box {
+  margin-bottom: 15px;
+}
+
+.search-box input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: 1px solid #ff4757;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-box input:focus {
+  border-color: #ff6b81;
+  box-shadow: 0 0 8px rgba(255, 71, 87, 0.4);
+}
+
+.topic-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.tag-btn {
+  background: #2b2b2b;
+  color: #ccc;
+  border: 1px solid #444;
+  padding: 6px 14px;
+  border-radius: 15px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tag-btn:hover {
+  background: #3a3a3a;
+  color: #fff;
+}
+
+.tag-btn.active {
+  background: #ff4757;
+  color: #fff;
+  border-color: #ff4757;
+}
+
+/* Badge แสดง Topic เล็กๆ บนการ์ด */
+.card-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.topic-badge {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ff4757;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 71, 87, 0.3);
+}

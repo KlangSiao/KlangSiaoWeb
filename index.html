@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Klang Siao Manga</title>
-  <link rel="icon" type="image/png" href="icon\LOGO.png">
+  <link rel="icon" type="image/png" href="icon/LOGO.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,83 +14,159 @@
     <p>เลือกเรื่องที่ต้องการอ่าน (แนะนำให้เปิดเสียงเพื่ออรรถรส)</p>
   </header>
 
+  <!-- 🔍 ส่วนค้นหาและเลือก Topic -->
+  <section class="filter-section">
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="🔍 ค้นหาชื่อเรื่อง หรือ หมวดหมู่..." onkeyup="filterManga()">
+    </div>
+    <div class="topic-tags">
+      <button class="tag-btn active" onclick="filterByTag('all', this)">ทั้งหมด</button>
+      <button class="tag-btn" onclick="filterByTag('FullColor', this)">Full Color</button>
+      <button class="tag-btn" onclick="filterByTag('Music', this)">Music</button>
+      <button class="tag-btn" onclick="filterByTag('Anime', this)">Anime</button>
+      <button class="tag-btn" onclick="filterByTag('Effect', this)">Effect</button>
+      <button class="tag-btn" onclick="filterByTag('Game', this)">Game</button>
+      <button class="tag-btn" onclick="filterByTag('Furry', this)">Furry</button>
+    </div>
+  </section>
+
   <main class="manga-grid">
     <!-- การ์ดมังงะเรื่องที่ 1 -->
-    <a href="reader.html?story=Knightsoul_Vacation" class="manga-card">
+    <a href="reader.html?story=Knightsoul_Vacation" class="manga-card" data-tags="FullColor Music Effect Game">
       <div class="card-image">
-        <img src="asset\Knightsoul Vacation\1.webp" alt="Knightsoul_Vacation Manga">
+        <img src="asset/Knightsoul Vacation/1.webp" alt="Knightsoul_Vacation Manga">
         <span class="genre tags-Knightsoul_Vacation">New</span>
       </div>
       <div class="card-info">
         <h3>Knightsoul Vacation</h3>
-        <p>เรื่องย่อ: ท่านวาร์กาลามาพักร้อนแต่ดันเจอหนุ่มหุ่นแสบมาเป็นไกด์ให้ หลังจบหน้าที่ก็มีบริการพิเศษจับเย็ดกัน3วัน3คืน</p>
+        <div class="card-topics">
+          <span class="topic-badge">FullColor</span>
+          <span class="topic-badge">Music</span>
+          <span class="topic-badge">Effect</span>
+          <span class="topic-badge">Game</span>
+        </div>
       </div>
     </a>
 
     <!-- การ์ดมังงะเรื่องที่ 2 -->
-    <a href="reader.html?story=Arcade_Affair" class="manga-card">
+    <a href="reader.html?story=Arcade_Affair" class="manga-card" data-tags="FullColor Anime Music">
       <div class="card-image">
-        <img src="asset\Arcade Affair\1.webp" alt="Arcade_Affair Manga">
+        <img src="asset/Arcade Affair/1.webp" alt="Arcade_Affair Manga">
       </div>
       <div class="card-info">
         <h3>Arcade Affair</h3>
-        <p>แนว: สยองขวัญ, สืบสวน (Effect: เสียงฝีเท้า, เสียงประตูมืด, เพลงหลอน)</p>
+        <div class="card-topics">
+          <span class="topic-badge">FullColor</span>
+          <span class="topic-badge">Anime</span>
+          <span class="topic-badge">Music</span>
+        </div>
       </div>
     </a>
 
     <!-- การ์ดมังงะเรื่องที่ 3 -->
-    <a href="reader.html?story=Gary&Pit" class="manga-card">
+    <a href="reader.html?story=Gary&Pit" class="manga-card" data-tags="">
       <div class="card-image">
-        <img src="asset\Gary & Pit\1.webp" alt="Gary&Pit Manga">
+        <img src="asset/Gary & Pit/1.webp" alt="Gary&Pit Manga">
       </div>
       <div class="card-info">
         <h3>Gary & Pit</h3>
-        <p>แนว: โรแมนติก, อบอุ่นหัวใจ (Effect: เสียงลมพัด, เพลงเปียโนนุ่มๆ)</p>
+        <div class="card-topics">
+          <span class="topic-badge">โรแมนติก</span>
+          <span class="topic-badge">อบอุ่นหัวใจ</span>
+        </div>
       </div>
     </a>
 
-
-    <a href="reader.html?story=Radical_Vacation" class="manga-card">
+    <!-- การ์ดมังงะเรื่องที่ 4 -->
+    <a href="reader.html?story=Radical_Vacation" class="manga-card" data-tags="FullColor Anime Music">
       <div class="card-image">
-        <img src="asset\Radical Vacation\1.webp" alt="Radical_Vacation Manga">
+        <img src="asset/Radical Vacation/1.webp" alt="Radical_Vacation Manga">
       </div>
       <div class="card-info">
         <h3>Radical Vacation</h3>
-        <p>เรื่องย่อ: ท่านวาร์กาลามาพักร้อนแต่ดันเจอหนุ่มหุ่นแสบมาเป็นไกด์ให้ หลังจบหน้าที่ก็มีบริการพิเศษจับเย็ดกัน3วัน3คืน</p>
+        <div class="card-topics">
+          <span class="topic-badge">FullColor</span>
+          <span class="topic-badge">Anime</span>
+          <span class="topic-badge">Music</span>
+        </div>
       </div>
     </a>
 
-
-    <a href="reader.html?story=Already_Pretty_the_Way_You_Are" class="manga-card">
+    <!-- การ์ดมังงะเรื่องที่ 5 -->
+    <a href="reader.html?story=Already_Pretty_the_Way_You_Are" class="manga-card" data-tags="โรแมนติก อบอุ่นหัวใจ">
       <div class="card-image">
-        <img src="asset\Already Pretty the Way You Are\1.webp" alt="Already_Pretty_the_Way_You_Are Manga">
+        <img src="asset/Already Pretty the Way You Are/1.webp" alt="Already_Pretty_the_Way_You_Are Manga">
       </div>
       <div class="card-info">
         <h3>Already Pretty the Way You Are</h3>
-        <p>เรื่องย่อ: ท่านวาร์กาลามาพักร้อนแต่ดันเจอหนุ่มหุ่นแสบมาเป็นไกด์ให้ หลังจบหน้าที่ก็มีบริการพิเศษจับเย็ดกัน3วัน3คืน</p>
+        <div class="card-topics">
+          <span class="topic-badge">โรแมนติก</span>
+          <span class="topic-badge">อบอุ่นหัวใจ</span>
+        </div>
       </div>
     </a>
 
-    <a href="reader.html?story=Super_Sons&The_Unwanted_Friend" class="manga-card">
+    <!-- การ์ดมังงะเรื่องที่ 6 -->
+    <a href="reader.html?story=Super_Sons&The_Unwanted_Friend" class="manga-card" data-tags="แฟนตาซี สืบสวน">
       <div class="card-image">
-        <img src="asset\Super Sons & The Unwanted Friend\1.webp" alt="Super_Sons&The_Unwanted_Friend Manga">
+        <img src="asset/Super Sons & The Unwanted Friend/1.webp" alt="Super_Sons&The_Unwanted_Friend Manga">
       </div>
       <div class="card-info">
-        <h3>SuperSons &The Unwanted Friend</h3>
-        <p>เรื่องย่อ: ท่านวาร์กาลามาพักร้อนแต่ดันเจอหนุ่มหุ่นแสบมาเป็นไกด์ให้ หลังจบหน้าที่ก็มีบริการพิเศษจับเย็ดกัน3วัน3คืน</p>
+        <h3>SuperSons & The Unwanted Friend</h3>
+        <div class="card-topics">
+          <span class="topic-badge">แฟนตาซี</span>
+          <span class="topic-badge">สืบสวน</span>
+        </div>
       </div>
     </a>
 
-    <a href="reader.html?story=Super_Sons_The_New_Journey_Begins" class="manga-card">
+    <!-- การ์ดมังงะเรื่องที่ 7 -->
+    <a href="reader.html?story=Super_Sons_The_New_Journey_Begins" class="manga-card" data-tags="แฟนตาซี พักร้อน">
       <div class="card-image">
-        <img src="asset\Super Sons, The New Journey Begins\1.webp" alt="Super_Sons_The_New_Journey_Begins Manga">
+        <img src="asset/Super Sons, The New Journey Begins/1.webp" alt="Super_Sons_The_New_Journey_Begins Manga">
       </div>
       <div class="card-info">
         <h3>Super Sons, The New Journey Begins</h3>
-        <p>เรื่องย่อ: ท่านวาร์กาลามาพักร้อนแต่ดันเจอหนุ่มหุ่นแสบมาเป็นไกด์ให้ หลังจบหน้าที่ก็มีบริการพิเศษจับเย็ดกัน3วัน3คืน</p>
+        <div class="card-topics">
+          <span class="topic-badge">แฟนตาซี</span>
+          <span class="topic-badge">พักร้อน</span>
+        </div>
       </div>
     </a>
   </main>
 
+  <!-- ⚙️ JavaScript ระบบค้นหาและ Filter -->
+  <script>
+    let currentSelectedTag = 'all';
+
+    function filterManga() {
+      const searchInput = document.getElementById('search-input').value.toLowerCase();
+      const cards = document.querySelectorAll('.manga-card');
+
+      cards.forEach(card => {
+        const title = card.querySelector('h3').innerText.toLowerCase();
+        const tags = card.getAttribute('data-tags') ? card.getAttribute('data-tags').toLowerCase() : '';
+
+        const matchesSearch = title.includes(searchInput) || tags.includes(searchInput);
+        const matchesTag = (currentSelectedTag === 'all') || tags.includes(currentSelectedTag.toLowerCase());
+
+        if (matchesSearch && matchesTag) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    }
+
+    function filterByTag(tag, btnElement) {
+      currentSelectedTag = tag;
+
+      // สลับ Active class ของปุ่ม
+      document.querySelectorAll('.tag-btn').forEach(btn => btn.classList.remove('active'));
+      btnElement.classList.add('active');
+
+      filterManga();
+    }
+  </script>
 </body>
 </html>
